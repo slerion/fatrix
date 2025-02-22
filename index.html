@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatrix Community</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .panel {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 30px; /* Добавил отступ слева */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.panel button {
+    background-color: #333;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+        .block {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 18px;
+            margin-bottom: 35px;
+            text-align: left;
+            
+        }
+        .beitritt {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 25px;
+            margin-bottom: 35px;
+            text-align: left;
+            
+        }
+        .highlight-text {
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(255, 102, 0);
+            font-family: 'Roboto', sans-serif;
+         
+        }
+        .info {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .small-text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            color: gray;
+        }
+        .date-info {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .date-info p strong {
+            color: rgb(255, 102, 0);
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        .highlight {
+            color: rgb(255, 102, 0);
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        .highlight_big {
+            color: rgb(255, 102, 0);
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+      
+        button {
+            background-color: rgb(0, 0, 0);
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+        .old-price {
+            text-decoration: line-through;
+        }
+        .new-price {
+            color: red;
+            font-weight: bold;
+        }
+        .blue-button {
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-left: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="panel">Fatrix Community<button onclick="scrollToBlock('block5')">Einen Antrag stellen</button></div>
+    <div class="container">
+        <div class="block visible" id="block1">
+            <h2>Fatrix Community</h2>
+            <p class="highlight-text">| bildungsplattform für den Beruf «Traffic-Arbitrage» auf TikTok mit garantierter Beschäftigung |</p>
+            <p>Erlernen Sie den Beruf im «Traffic-Arbitrage» und verdienen Sie <span style="text-decoration: underline;">ab €500 pro Monat</span></p>
+            <div class="date-info">
+                <p><strong>08.03</strong> kursbeginn</p>
+                <p><strong>100</strong> freie Plätze verfügbar</p>
+            </div>
+            <button onclick="scrollToBlock('block2')">Mehr erfahren</button>
+            
+        </div>
+        <div class="block" id="block2">
+            <h2>Was ist Traffic-Arbitrage</h2>
+            <p><span class="highlight">Traffic-Arbitrage</span> ist die Suche und Gewinnung einer Zielgruppe, insbesondere aus sozialen Netzwerken, um sie anschließend an Werbetreibende zu verkaufen und Gewinn zu erzielen. Der <span class="highlight">Arbitrageur</span> findet die Zielgruppe über verschiedene Kanäle, leitet sie zu Angeboten weiter und verdient an der <span class="highlight">Preisdifferenz</span></p>
+            <img src="arbitrage.svg" alt="Арбитраж трафика">
+        </div>
+        <div class="block" id="block3">
+            <h2>Einnahmen</h2>
+            
+            <p>Die Einnahmen im Bereich des Traffic-Arbitrage variieren zwischen <span class="highlight">500 und 5000 Euro pro Monat</span>. Der Arbitrageur erhält eine Vergütung für jeden vermittelten <span class="highlight">Referral</span>, daher hängt die <span class="highlight">Rentabilität</span> allein von Ihnen ab.</p>
+            <img src="screen.svg" alt="Заработок">
+        
+        </div>
+        <div class="block" id="block4">
+            <h2>Das Lernen mit uns bedeutet</h2>
+            
+            <p><span class="highlight_big">1. Der Zugang zu allen Lernmaterialien ist griffbereit</span><br>Alle Materialien werden im Telegram-Kanal bereitgestellt und sind immer verfügbar</p>
+            <p><span class="highlight_big">2. Kommunikation und Unterstützung</span><br>Auf alle Fragen, die während des Lernprozesses auftauchen können, werden unsere Betreuer schnell antworten können</p>
+            <p><span class="highlight_big">3. Erster Verdienst nach 3 Tagen Lernen</span><br>Wir bieten die Möglichkeit, während des Lernens zu verdienen, daher werden die positiven Ergebnisse nicht lange auf sich warten lassen</p>
+            <div class="table-container">
+                <h3>Der Preis des Kurses</h3>
+                <table>
+                    <tr>
+                        <th>Tarif</th>
+                        <th>Preis</th>
+                    </tr>
+                    <tr>
+                        <td>Traffic-Arbitrage auf TikTok</td>
+                        <td><span class="old-price">€29.99</span> <span class="new-price">€0.00</span></td>
+                    </tr>
+                </table>
+            </div>
+            <button onclick="scrollToBlock('block5')">Einen Antrag stellen</button>
+        </div>
+        <div class="block" id="block5">
+            <h2>Beitritt</h2>
+                <p class="beitritt"><span class="highlight">1. </span>Laden Sie den Messenger Telegram herunter und melden Sie sich an (falls Sie dies noch nicht getan haben)</p>
+                <p class="beitritt"><span class="highlight">2. </span>Senden Sie eine Abonnementanfrage an unseren Kanal</p>
+                <a href="#" class="blue-button">Telegram</a>
+                <p class="beitritt"><span class="highlight">3. </span>Warten Sie, bis wir Sie akzeptieren...</p>
+                <img src="logo.svg" alt="Заработок">
+        </div>
+    </div>
+    <div class="panel"><span class="highlight">Email:</span> fatrixcommunity@gmail.com</div>
+    <script>
+        function scrollToBlock(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        function revealBlocks() {
+            document.querySelectorAll('.block').forEach(block => {
+                if (block.getBoundingClientRect().top < window.innerHeight - 300) {
+                    block.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealBlocks);
+        window.addEventListener('load', revealBlocks);
+    </script>
+</body>
+</html>
